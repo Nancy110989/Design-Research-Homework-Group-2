@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="设计研究三种类型的研究图谱：Research Into Design、Research For Design、Research Through Design。"
+    />
+    <title>设计研究图谱 · Into / For / Through</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#overview" aria-label="回到研究图谱首页">
+          <span class="brand-mark" aria-hidden="true"><i></i><i></i></span>
+          <span>设计研究图谱</span>
+        </a>
+        <nav class="main-nav" aria-label="页面导航">
+          <a href="#overview">总览</a>
+          <a href="#types">三种类型</a>
+          <a href="#cases">论文案例</a>
+          <a href="#dispute">争议案例</a>
+          <a href="#references">参考文献</a>
+        </nav>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">
+          <span></span><span></span><span></span>
+          <b class="sr-only">打开导航</b>
+        </button>
+      </div>
+      <nav id="main-navigation" class="mobile-nav" aria-label="移动端页面导航">
+        <a href="#overview">总览</a>
+        <a href="#types">三种类型</a>
+        <a href="#cases">论文案例</a>
+        <a href="#dispute">争议案例</a>
+        <a href="#references">参考文献</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="overview" class="hero section-shell">
+        <div class="hero-copy">
+          <p class="eyebrow">DESIGN RESEARCH ATLAS · 2024—2026</p>
+          <h1>设计研究的三种取向</h1>
+          <p class="hero-lede">
+            从“认识设计”到“支持设计”，再到“通过设计生成知识”。这不是一条固定流程，而是一张允许交叉、回流与混合的研究地图。
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#types">开始阅读</a>
+            <a class="button button-quiet" href="#cases">查看论文证据</a>
+          </div>
+          <div class="hero-rule">
+            <span class="rule-line" aria-hidden="true"></span>
+            <span>分类判断看：研究目的 × 设计角色 × 方法 × 产出</span>
+          </div>
+        </div>
+        <figure class="hero-figure">
+          <img src="assets/logic-triangle-field.svg" alt="三种设计研究类型的三角流场逻辑关系图" />
+          <figcaption>最终逻辑关系图：理论、实践与知识在同一研究场中动态转换。</figcaption>
+        </figure>
+      </section>
+
+      <section class="signal-band" aria-label="三个核心判断">
+        <div class="section-shell signal-grid">
+          <div class="signal">
+            <span class="signal-index">01</span>
+            <strong>Into</strong>
+            <span>设计是被解释的对象</span>
+          </div>
+          <div class="signal">
+            <span class="signal-index">02</span>
+            <strong>For</strong>
+            <span>研究为设计决策提供支持</span>
+          </div>
+          <div class="signal">
+            <span class="signal-index">03</span>
+            <strong>Through</strong>
+            <span>设计实践成为知识媒介</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="types" class="section-shell section-block">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">01 · ORIENTATION</p>
+            <h2>三种研究类型</h2>
+          </div>
+          <p class="section-intro">
+            先看研究重心，再看具体方法。访谈、原型或用户研究本身不能单独决定分类。
+          </p>
+        </div>
+        <div class="type-tabs" role="tablist" aria-label="三种研究类型">
+          <button class="type-tab is-active" type="button" role="tab" aria-selected="true" data-type="into">
+            <span class="tab-number">01</span>
+            <span><b>Research Into Design</b><small>对设计的研究</small></span>
+          </button>
+          <button class="type-tab" type="button" role="tab" aria-selected="false" data-type="for">
+            <span class="tab-number">02</span>
+            <span><b>Research For Design</b><small>为设计的研究</small></span>
+          </button>
+          <button class="type-tab" type="button" role="tab" aria-selected="false" data-type="through">
+            <span class="tab-number">03</span>
+            <span><b>Research Through Design</b><small>通过设计的研究</small></span>
+          </button>
+        </div>
+        <article id="type-detail" class="type-detail" aria-live="polite"></article>
+      </section>
+
+      <section class="section-shell section-block comparison-block">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">02 · COMPARISON</p>
+            <h2>一张表看清差异</h2>
+          </div>
+          <p class="section-intro">点击列标题可突出对应类型，帮助快速比较研究目的、设计角色和知识产出。</p>
+        </div>
+        <div class="comparison-wrap">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th scope="col">比较维度</th>
+                <th scope="col" data-col="into">Into<br /><span>对设计</span></th>
+                <th scope="col" data-col="for">For<br /><span>为设计</span></th>
+                <th scope="col" data-col="through">Through<br /><span>通过设计</span></th>
+              </tr>
+            </thead>
+            <tbody id="comparison-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="cases" class="section-shell section-block cases-block">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">03 · RECENT PAPERS</p>
+            <h2>近两年论文案例</h2>
+          </div>
+          <p class="section-intro">
+            检索范围：Design Studies、International Journal of Design、Design Issues、Leonardo、The Design Journal、CHI、UIST、IJHCS。
+          </p>
+        </div>
+        <div class="case-toolbar">
+          <div class="filter-group" role="group" aria-label="按研究类型筛选">
+            <button class="filter-button is-active" type="button" data-filter="all">全部 <span>3</span></button>
+            <button class="filter-button" type="button" data-filter="into">Into <span>1</span></button>
+            <button class="filter-button" type="button" data-filter="for">For <span>1</span></button>
+            <button class="filter-button" type="button" data-filter="through">Through <span>1</span></button>
+          </div>
+          <p class="date-note">时间口径：2024.09.23—2026.09.23</p>
+        </div>
+        <div id="case-list" class="case-list"></div>
+      </section>
+
+      <section id="dispute" class="section-shell section-block dispute-section">
+        <div class="dispute-layout">
+          <div class="dispute-label">
+            <p class="eyebrow">04 · BORDER CASE</p>
+            <h2>一篇难以单一归类的论文</h2>
+            <p>分类不是给论文贴死标签，而是说明它在不同研究维度上的重心。</p>
+          </div>
+          <article id="dispute-card" class="dispute-card"></article>
+        </div>
+      </section>
+
+      <section class="section-shell section-block method-section">
+        <div class="method-grid">
+          <div>
+            <p class="eyebrow">05 · GROUP JUDGEMENT</p>
+            <h2>小组判断方法</h2>
+            <p class="method-lede">
+              同一篇论文可能在目的、对象、过程和产出上呈现不同取向。先确定主分类，再说明交叉特征。
+            </p>
+          </div>
+          <ol class="method-list">
+            <li><span>01</span><div><b>研究目的</b><small>作者最想理解、支持，还是通过设计生成什么？</small></div></li>
+            <li><span>02</span><div><b>设计角色</b><small>设计是研究对象、应用目标，还是研究媒介？</small></div></li>
+            <li><span>03</span><div><b>研究过程</b><small>是否通过设计实践持续迭代并产生认识？</small></div></li>
+            <li><span>04</span><div><b>知识产出</b><small>最终留下的是理论解释、设计支持，还是实践性新知识？</small></div></li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="references" class="section-shell section-block references-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">06 · SOURCES</p>
+            <h2>参考文献与核查入口</h2>
+          </div>
+          <p class="section-intro">点击标题进入 DOI 或期刊页面，核对摘要、方法、章节和结论。</p>
+        </div>
+        <ol id="reference-list" class="reference-list"></ol>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-shell footer-inner">
+        <div>
+          <span class="footer-mark" aria-hidden="true">R × D</span>
+          <p>设计研究三种取向 · 小组研究网页</p>
+        </div>
+        <p class="footer-note">内容依据课程 PPT 与指定期刊/会议范围整理。论文分类为小组分析判断。</p>
+      </div>
+    </footer>
+
+    <dialog id="evidence-dialog" class="evidence-dialog">
+      <div class="dialog-head">
+        <div>
+          <p class="eyebrow">EVIDENCE NOTE</p>
+          <h2 id="dialog-title">原文证据</h2>
+        </div>
+        <button class="dialog-close" type="button" aria-label="关闭证据窗口">×</button>
+      </div>
+      <div id="dialog-content" class="dialog-content"></div>
+    </dialog>
+
+    <script src="app.js"></script>
+  </body>
+</html>

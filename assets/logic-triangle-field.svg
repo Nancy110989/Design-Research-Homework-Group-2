@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <linearGradient id="field" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f2f8ff"/>
+      <stop offset=".55" stop-color="#fbf9f1"/>
+      <stop offset="1" stop-color="#f4fbf8"/>
+    </linearGradient>
+    <linearGradient id="a" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#2169a8"/><stop offset="1" stop-color="#75c4d5"/></linearGradient>
+    <linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#dc832f"/><stop offset="1" stop-color="#f0c27c"/></linearGradient>
+    <linearGradient id="c" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#188d81"/><stop offset="1" stop-color="#8acdb9"/></linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#31566a" flood-opacity=".16"/>
+    </filter>
+    <marker id="arrowA" markerWidth="14" markerHeight="14" refX="11" refY="7" orient="auto"><path d="M0,0 L14,7 L0,14 Z" fill="#2169a8"/></marker>
+    <marker id="arrowB" markerWidth="14" markerHeight="14" refX="11" refY="7" orient="auto"><path d="M0,0 L14,7 L0,14 Z" fill="#dc832f"/></marker>
+    <marker id="arrowC" markerWidth="14" markerHeight="14" refX="11" refY="7" orient="auto"><path d="M0,0 L14,7 L0,14 Z" fill="#188d81"/></marker>
+    <style>
+      .font { font-family: "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; fill: #1d344b; }
+      .title { font-size: 40px; font-weight: 700; }
+      .sub { font-size: 20px; fill: #64798a; }
+      .cn { font-size: 27px; font-weight: 700; fill: #fff; }
+      .en { font-size: 18px; font-weight: 600; fill: #fff; }
+      .small { font-size: 18px; fill: #51697b; }
+      .label { font-size: 20px; font-weight: 700; }
+      .axis { font-size: 18px; fill: #7a8790; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#field)"/>
+  <text x="90" y="82" class="font title">Research X Design · Triangle Field</text>
+  <text x="92" y="120" class="font sub">三角流场模型：理论、实践与产出之间的动态转换</text>
+
+  <!-- abstract field -->
+  <path d="M800 184 L1370 800 L230 800 Z" fill="#ffffff" opacity=".38" stroke="#c9d6de" stroke-width="2"/>
+  <path d="M800 230 L1280 760 L320 760 Z" fill="none" stroke="#d5e1e6" stroke-width="2" stroke-dasharray="8 12"/>
+  <circle cx="800" cy="545" r="182" fill="#ffffff" opacity=".72" stroke="#b8cad4" stroke-width="2"/>
+  <text x="800" y="524" text-anchor="middle" class="font" style="font-size:27px;font-weight:700">研究类型的</text>
+  <text x="800" y="562" text-anchor="middle" class="font" style="font-size:27px;font-weight:700">动态关系</text>
+  <text x="800" y="600" text-anchor="middle" class="font small">目的 × 角色 × 方法 × 产出</text>
+
+  <!-- vertices -->
+  <g filter="url(#shadow)">
+    <circle cx="800" cy="235" r="154" fill="url(#a)"/>
+    <circle cx="800" cy="235" r="128" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="2"/>
+  </g>
+  <text x="800" y="214" text-anchor="middle" class="font cn">对设计的研究</text>
+  <text x="800" y="247" text-anchor="middle" class="font en">RESEARCH INTO DESIGN</text>
+  <text x="800" y="292" text-anchor="middle" class="font" style="font-size:19px;fill:#eaf8ff">认识设计 · 解释设计</text>
+
+  <g filter="url(#shadow)">
+    <circle cx="280" cy="790" r="154" fill="url(#b)"/>
+    <circle cx="280" cy="790" r="128" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="2"/>
+  </g>
+  <text x="280" y="769" text-anchor="middle" class="font cn">为设计的研究</text>
+  <text x="280" y="802" text-anchor="middle" class="font en">RESEARCH FOR DESIGN</text>
+  <text x="280" y="847" text-anchor="middle" class="font" style="font-size:19px;fill:#fffaf1">支持设计 · 转化设计</text>
+
+  <g filter="url(#shadow)">
+    <circle cx="1320" cy="790" r="154" fill="url(#c)"/>
+    <circle cx="1320" cy="790" r="128" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="2"/>
+  </g>
+  <text x="1320" y="769" text-anchor="middle" class="font cn">通过设计的研究</text>
+  <text x="1320" y="802" text-anchor="middle" class="font en">RESEARCH THROUGH DESIGN</text>
+  <text x="1320" y="847" text-anchor="middle" class="font" style="font-size:19px;fill:#f0fffb">实践设计 · 生成知识</text>
+
+  <!-- main arrows around triangle -->
+  <path d="M665 320 C560 390 465 500 360 654" fill="none" stroke="#2169a8" stroke-width="5" marker-end="url(#arrowA)"/>
+  <rect x="382" y="433" width="260" height="44" rx="22" fill="#ffffff" opacity=".9" stroke="#b9d2e2"/>
+  <text x="512" y="462" text-anchor="middle" class="font label" fill="#2169a8">理论基础 → 设计支持</text>
+
+  <path d="M435 805 C650 885 950 885 1160 805" fill="none" stroke="#dc832f" stroke-width="5" marker-end="url(#arrowB)"/>
+  <rect x="680" y="868" width="240" height="44" rx="22" fill="#ffffff" opacity=".9" stroke="#ecd2ae"/>
+  <text x="800" y="897" text-anchor="middle" class="font label" fill="#b86a20">需求 → 实践转化</text>
+
+  <path d="M1244 655 C1140 500 1040 388 935 320" fill="none" stroke="#188d81" stroke-width="5" marker-end="url(#arrowC)"/>
+  <rect x="970" y="433" width="270" height="44" rx="22" fill="#ffffff" opacity=".9" stroke="#b6dcd2"/>
+  <text x="1105" y="462" text-anchor="middle" class="font label" fill="#14776e">实践证据 → 新认识</text>
+
+  <!-- inner relationship labels -->
+  <path d="M700 510 C610 540 555 600 485 680" fill="none" stroke="#2169a8" stroke-width="3" stroke-dasharray="8 9" marker-end="url(#arrowA)"/>
+  <text x="567" y="580" text-anchor="middle" class="font small">研究素材</text>
+  <path d="M1115 680 C1035 600 975 550 895 510" fill="none" stroke="#188d81" stroke-width="3" stroke-dasharray="8 9" marker-end="url(#arrowC)"/>
+  <text x="1040" y="580" text-anchor="middle" class="font small">反思与知识</text>
+
+  <!-- axis captions -->
+  <text x="800" y="154" text-anchor="middle" class="font axis">理论 / 解释</text>
+  <text x="168" y="927" class="font axis">支持 / 应用</text>
+  <text x="1320" y="927" text-anchor="middle" class="font axis">实践 / 生成</text>
+
+  <rect x="205" y="945" width="1190" height="40" rx="20" fill="#ffffff" opacity=".66"/>
+  <text x="800" y="971" text-anchor="middle" class="font" style="font-size:18px;fill:#5f7482">三角形不是固定流程，而是一个允许回流、交叉和混合的研究场</text>
+</svg>
